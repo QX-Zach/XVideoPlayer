@@ -1,0 +1,1 @@
+include ':app', ':ijkplayer-armv7a-release', ':ijkplayer-java-release', ':ijkplayer-exo-release', ':Android_AylaLibrary_Public-release'

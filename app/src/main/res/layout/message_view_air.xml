@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_bg_3"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp">
+
+    <!--<TextView-->
+    <!--android:id="@+id/messageText"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="30sp"-->
+    <!--android:visibility="gone" />-->
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="室内空气质量"
+            android:textColor="@color/cpb_white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/static_bg"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:textColor="@color/cpb_white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/line2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llay_airConn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="室内PM2.5"
+                android:textColor="@color/cpb_white"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/tv_roomIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/textview_bg"
+                android:gravity="center"
+                android:minWidth="40dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="室外PM2.5"
+                android:textColor="@color/cpb_white"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/tv_roomOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/textview_bg"
+                android:gravity="center"
+                android:minWidth="40dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_airOffline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:text="设备断开连接"
+            android:textColor="@color/cpb_white"
+            android:textSize="22dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

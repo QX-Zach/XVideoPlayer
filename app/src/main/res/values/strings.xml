@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OznerPlayer</string>
+
+
+    <string name="cup_name">浩泽智能杯</string>
+    <string name="tap_name">浩泽智能水探头</string>
+    <string name="water_purifier_name">浩泽智能净水器</string>
+    <string name="air_purifier_name">浩泽智能空气净化器</string>
+    <string name="air_bluetooth_purifier_name">浩泽智能空气净化器</string>
+
+    <string name="water_replenishment_meter">补水仪</string>
+    <string name="music_cap">音乐帽</string>
+    <string name="noneValue">暂无</string>
+    <string name="first_info">本店饮用水与空气净化设备由浩泽提供</string>
+</resources>
