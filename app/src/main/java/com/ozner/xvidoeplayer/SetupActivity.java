@@ -157,7 +157,11 @@ public class SetupActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setType("*/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(intent, 1);
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                    startActivityForResult(intent, 1);
+                }else {
+                    Toast.makeText(SetupActivity.this, "没有找到相应文件，请重试！", Toast.LENGTH_SHORT).show();
+                }
                 break;
             case KeyEvent.KEYCODE_2:
                 videoAdapter.selectAll();
