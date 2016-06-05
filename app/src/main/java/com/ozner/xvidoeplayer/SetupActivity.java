@@ -157,6 +157,7 @@ public class SetupActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setType("*/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
+
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivityForResult(intent, 1);
                 }else {
